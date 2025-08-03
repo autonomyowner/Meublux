@@ -1,117 +1,152 @@
-# 🚀 Deployment Guide - Ikhlas Automobiles
+# Meublux - Deployment Guide
 
-## ✅ **GitHub Repository Ready**
+## 🚀 **GitHub Repository**
+- **Repository**: https://github.com/autonomyowner/Meublux.git
+- **Status**: ✅ Successfully pushed
+- **Branch**: master
 
-Your code has been successfully pushed to:
-**https://github.com/autonomyowner/Ikhlas-Automobiles-.git**
+## 📋 **Project Overview**
+- **Name**: Meublux - Design your Dream Space
+- **Type**: Furniture & Interior Design Website
+- **Language**: Arabic (RTL) + English
+- **Location**: Algeria
+- **Contact**: 0561 00 91 94 | walidmessaoudi178@gmail.com
 
-## 🎯 **Next Steps: Deploy to Vercel**
+## 🛠 **Technology Stack**
+- **Framework**: Next.js 14
+- **Styling**: Tailwind CSS
+- **Animations**: Framer Motion
+- **Icons**: Lucide React
+- **Deployment**: Vercel (Recommended)
 
-### **Step 1: Connect to Vercel**
+## 📁 **Key Files & Structure**
+```
+Meublux/
+├── app/
+│   ├── layout.tsx (Arabic RTL support)
+│   ├── page.tsx (Main page)
+│   └── globals.css
+├── components/
+│   ├── layout/
+│   │   ├── header.tsx (Arabic navigation)
+│   │   └── footer.tsx
+│   └── sections/
+│       ├── hero-section.tsx (Video background)
+│       ├── featured-vehicles.tsx (Furniture showcase)
+│       ├── services-overview.tsx
+│       ├── why-choose-us.tsx
+│       ├── testimonials.tsx
+│       ├── contact-cta.tsx
+│       └── brand-showcase.tsx
+├── data/
+│   └── furniture.ts (Furniture data)
+├── public/
+│   ├── pics/ (Furniture images)
+│   └── 1427832238427342.mp4 (Background video)
+└── types/
+    └── index.ts (TypeScript interfaces)
+```
 
-1. **Visit** [vercel.com](https://vercel.com)
-2. **Sign in** with your GitHub account
-3. **Click** "New Project"
-4. **Import** your repository: `autonomyowner/Ikhlas-Automobiles-`
+## 🎯 **Features Implemented**
+- ✅ **Arabic RTL Support**: Full right-to-left layout
+- ✅ **Responsive Design**: Mobile-first approach
+- ✅ **Video Background**: Hero section with video
+- ✅ **Furniture Showcase**: 5 furniture categories
+- ✅ **Contact Information**: Algeria location
+- ✅ **SEO Optimized**: Meta tags and descriptions
+- ✅ **Modern UI**: Luxury design with animations
 
-### **Step 2: Configure Project Settings**
+## 💰 **Pricing Structure**
+- **Living Room Set**: 2,500 دج
+- **Modern Kitchen**: 4,500 دج
+- **Luxury Bedroom**: 3,500 دج
+- **Dining Table**: 1,800 دج
+- **Office Desk**: 950 دج
 
-**Framework Preset:** Next.js (should auto-detect)
+## 🚀 **Vercel Deployment Steps**
 
-**Build Settings:**
-- **Build Command:** `npm run build` (default)
-- **Output Directory:** `.next` (default)
-- **Install Command:** `npm install` (default)
+### 1. **Connect to Vercel**
+1. Go to [vercel.com](https://vercel.com)
+2. Sign in with GitHub
+3. Click "New Project"
+4. Import repository: `autonomyowner/Meublux`
 
-**Environment Variables:** (if needed)
-- No environment variables required for this project
+### 2. **Configure Settings**
+- **Framework Preset**: Next.js
+- **Root Directory**: `./` (default)
+- **Build Command**: `npm run build`
+- **Output Directory**: `.next`
 
-### **Step 3: Deploy**
+### 3. **Environment Variables** (if needed)
+```
+NEXT_PUBLIC_SITE_URL=https://meublux.vercel.app
+```
 
-1. **Click** "Deploy"
-2. **Wait** for build to complete (2-3 minutes)
-3. **Your site will be live** at a Vercel URL like: `https://ikhlas-automobiles-xxxxx.vercel.app`
+### 4. **Deploy**
+- Click "Deploy"
+- Vercel will automatically build and deploy
 
-## 🎨 **What's Being Deployed**
+## 🔧 **Local Development**
+```bash
+# Install dependencies
+npm install
 
-### **✅ Features Ready for Production**
-- **Luxury car dealership website** with professional design
-- **Background video** with your actual car footage
-- **Local car images** from your collection
-- **Smooth animations** without hydration errors
-- **Responsive design** for all devices
-- **SEO optimized** with proper meta tags
-- **Fast loading** with Next.js optimizations
+# Run development server
+npm run dev
 
-### **📁 Files Included**
-- **All source code** (React/Next.js components)
-- **Static assets** (images, video, favicons)
-- **Configuration files** (Tailwind, TypeScript, etc.)
-- **Documentation** (deployment guides, fixes applied)
+# Build for production
+npm run build
 
-### **🚫 Files Excluded** (via .gitignore)
-- `node_modules/` (dependencies)
-- `.next/` (build cache)
-- `.env` files (environment variables)
-- IDE files and logs
+# Start production server
+npm start
+```
 
-## 🔧 **Post-Deployment Steps**
+## 📱 **Responsive Breakpoints**
+- **Mobile**: < 768px
+- **Tablet**: 768px - 1024px
+- **Desktop**: > 1024px
 
-### **1. Custom Domain (Optional)**
-- In Vercel dashboard, go to **Settings > Domains**
-- **Add** your custom domain (e.g., `ikhlas-automobiles.com`)
-- **Configure** DNS settings as instructed
+## 🌐 **SEO Features**
+- **Title**: Meublux - Design your Dream Space
+- **Description**: Arabic furniture description
+- **Keywords**: furniture, interior design, Algeria
+- **Locale**: ar_DZ (Algeria)
+- **Open Graph**: Configured for social sharing
 
-### **2. Environment Variables (If Needed)**
-- Go to **Settings > Environment Variables**
-- **Add** any API keys or configuration needed
+## 📞 **Contact Information**
+- **Phone**: 0561 00 91 94
+- **Email**: walidmessaoudi178@gmail.com
+- **Location**: الجزائر (Algeria)
+- **Business Hours**: Monday-Friday 9:00-19:00
 
-### **3. Analytics (Optional)**
-- **Enable** Vercel Analytics in dashboard
-- **Track** visitor behavior and performance
+## 🎨 **Design Features**
+- **Color Scheme**: Luxury gold and black
+- **Typography**: Inter + Playfair Display
+- **Animations**: Framer Motion
+- **Icons**: Lucide React
+- **Layout**: RTL support for Arabic
 
-## 🎯 **Expected Results**
+## ✅ **Ready for Production**
+- ✅ All images optimized and in correct locations
+- ✅ Video background working
+- ✅ Arabic content implemented
+- ✅ Responsive design tested
+- ✅ SEO metadata configured
+- ✅ Contact information updated
+- ✅ Pricing structure finalized
 
-### **✅ What You'll Get**
-- **Live website** accessible worldwide
-- **Automatic deployments** on every Git push
-- **SSL certificate** (HTTPS) included
-- **CDN** for fast global loading
-- **Analytics** and performance monitoring
+## 🔗 **Deployment Links**
+- **GitHub**: https://github.com/autonomyowner/Meublux.git
+- **Vercel**: Will be available after deployment
+- **Live Site**: Will be provided by Vercel
 
-### **🌐 Your Live Site Will Include**
-- **Hero section** with background video
-- **Featured vehicles** with your car images
-- **Brand showcase** and services
-- **Testimonials** and contact sections
-- **Professional footer** with company info
+## 📝 **Next Steps**
+1. Deploy to Vercel
+2. Configure custom domain (optional)
+3. Set up analytics (Google Analytics)
+4. Configure email forms
+5. Add payment integration (if needed)
 
-## 🚀 **Deployment Checklist**
-
-- ✅ **Code pushed to GitHub**
-- ✅ **Repository connected to Vercel**
-- ✅ **Build settings configured**
-- ✅ **Deployment initiated**
-- ✅ **Live site accessible**
-- ✅ **Custom domain configured** (optional)
-- ✅ **Analytics enabled** (optional)
-
-## 📞 **Support**
-
-If you encounter any issues:
-1. **Check** Vercel build logs for errors
-2. **Verify** all files are in the repository
-3. **Ensure** build command works locally (`npm run build`)
-4. **Contact** Vercel support if needed
-
-## 🎉 **Congratulations!**
-
-Your Ikhlas Automobiles luxury car dealership website is now ready for the world! Your customers will experience:
-
-- **Professional luxury design**
-- **Fast loading performance**
-- **Mobile-responsive experience**
-- **Your actual car images and video**
-- **Smooth animations and interactions**
-
-**Your website is ready to impress customers and drive business!** 🚗✨ 
+---
+**Last Updated**: January 2025
+**Status**: Ready for Deployment ✅ 
