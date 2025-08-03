@@ -7,28 +7,28 @@ import { Star, Quote } from 'lucide-react'
 const Testimonials = () => {
   const testimonials = [
     {
-      name: 'Jean-Pierre Dubois',
-      role: 'CEO, TechCorp',
-      company: 'TechCorp Industries',
-      content: 'Ikhlas Automobiles a transformé mon expérience d\'achat de véhicule de luxe. Leur expertise et leur service personnalisé sont exceptionnels.',
+      name: 'أحمد محمد',
+      role: 'مدير شركة',
+      company: 'شركة التطوير العقاري',
+      content: 'Meublux حولت تجربتي في تصميم المنزل. خبرتهم والخدمة المخصصة استثنائية حقاً',
       rating: 5,
-      vehicle: 'Mercedes-Benz S-Class'
+      project: 'تصميم غرفة المعيشة'
     },
     {
-      name: 'Marie-Claire Laurent',
-      role: 'Directrice Marketing',
-      company: 'Luxury Brands',
-      content: 'Un service de conciergerie de niveau international. Ils ont trouvé exactement le véhicule que je recherchais en seulement 2 semaines.',
+      name: 'فاطمة الزهراء',
+      role: 'مصممة داخلية',
+      company: 'استوديو التصميم',
+      content: 'خدمة احترافية من المستوى العالمي. وجدوا لي التصميم المثالي لمنزلي في أسبوعين فقط',
       rating: 5,
-      vehicle: 'BMW M8 Competition'
+      project: 'مطبخ عصري مفتوح'
     },
     {
-      name: 'Antoine Moreau',
-      role: 'Investisseur',
-      company: 'Private Equity',
-      content: 'La qualité de leurs véhicules et leur transparence dans les transactions m\'ont convaincu. Je recommande vivement leurs services.',
+      name: 'علي حسن',
+      role: 'مستثمر',
+      company: 'الاستثمارات الخاصة',
+      content: 'جودة أثاثهم وشفافيتهم في المعاملات أقنعتني. أوصي بشدة بخدماتهم',
       rating: 5,
-      vehicle: 'Porsche 911 GT3 RS'
+      project: 'تصميم مكتب فاخر'
     }
   ]
 
@@ -44,10 +44,10 @@ const Testimonials = () => {
           className="text-center mb-16"
         >
           <h2 className="text-4xl md:text-5xl font-display font-bold text-luxury-black mb-4">
-            Témoignages Clients
+            آراء العملاء
           </h2>
-          <p className="text-xl text-gray-600 max-w-3xl mx-auto">
-            Découvrez ce que nos clients disent de leur expérience avec Ikhlas Automobiles.
+          <p className="text-xl text-gray-600 max-w-3xl mx-auto" dir="rtl">
+            اكتشف ما يقوله عملاؤنا عن تجربتهم مع Meublux
           </p>
         </motion.div>
 
@@ -76,14 +76,14 @@ const Testimonials = () => {
                 </div>
 
                 {/* Content */}
-                <p className="text-gray-600 mb-6 leading-relaxed">
+                <p className="text-gray-600 mb-6 leading-relaxed" dir="rtl">
                   "{testimonial.content}"
                 </p>
 
-                {/* Vehicle */}
+                {/* Project */}
                 <div className="mb-6">
-                  <span className="text-sm text-luxury-gold font-medium">
-                    Véhicule : {testimonial.vehicle}
+                  <span className="text-sm text-luxury-gold font-medium" dir="rtl">
+                    المشروع : {testimonial.project}
                   </span>
                 </div>
 
@@ -95,10 +95,10 @@ const Testimonials = () => {
                     </span>
                   </div>
                   <div>
-                    <h4 className="font-semibold text-luxury-black">
+                    <h4 className="font-semibold text-luxury-black" dir="rtl">
                       {testimonial.name}
                     </h4>
-                    <p className="text-sm text-gray-600">
+                    <p className="text-sm text-gray-600" dir="rtl">
                       {testimonial.role}, {testimonial.company}
                     </p>
                   </div>
@@ -119,17 +119,17 @@ const Testimonials = () => {
           <div className="inline-flex items-center space-x-8 bg-white rounded-full px-8 py-4 shadow-lg">
             <div className="text-center">
               <div className="text-2xl font-bold text-luxury-gold">98%</div>
-              <div className="text-sm text-gray-600">Satisfaction</div>
+              <div className="text-sm text-gray-600" dir="rtl">رضا العملاء</div>
             </div>
             <div className="w-px h-8 bg-gray-300"></div>
             <div className="text-center">
               <div className="text-2xl font-bold text-luxury-gold">500+</div>
-              <div className="text-sm text-gray-600">Véhicules Vendus</div>
+              <div className="text-sm text-gray-600" dir="rtl">مشروع منجز</div>
             </div>
             <div className="w-px h-8 bg-gray-300"></div>
             <div className="text-center">
-              <div className="text-2xl font-bold text-luxury-gold">15+</div>
-              <div className="text-sm text-gray-600">Années d'Expérience</div>
+              <div className="text-2xl font-bold text-luxury-gold">10+</div>
+              <div className="text-sm text-gray-600" dir="rtl">سنوات خبرة</div>
             </div>
           </div>
         </motion.div>

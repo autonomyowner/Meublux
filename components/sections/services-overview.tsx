@@ -2,45 +2,45 @@
 
 import React from 'react'
 import { motion } from 'framer-motion'
-import { Shield, Car, Users, Clock, Star, Zap } from 'lucide-react'
+import { Shield, Home, Users, Clock, Star, Zap, Palette, Truck } from 'lucide-react'
 
 const ServicesOverview = () => {
   const services = [
     {
-      icon: Car,
-      title: 'Acquisition de Véhicules',
-      description: 'Sourcing personnalisé de véhicules rares et exclusifs selon vos spécifications exactes.',
-      features: ['Recherche internationale', 'Inspection pré-achat', 'Négociation exclusive']
+      icon: Home,
+      title: 'تصميم الأثاث المخصص',
+      description: 'تصميم أثاث مخصص يناسب مساحتك وأذواقك الشخصية مع أحدث التقنيات',
+      features: ['تصميم مخصص', 'مقاسات دقيقة', 'خيارات متعددة']
     },
     {
       icon: Shield,
-      title: 'Garantie Premium',
-      description: 'Protection complète de votre investissement avec nos garanties étendues.',
-      features: ['Garantie constructeur', 'Extension de garantie', 'Assurance premium']
+      title: 'ضمان الجودة',
+      description: 'ضمان شامل على جميع منتجاتنا مع خدمة ما بعد البيع المميزة',
+      features: ['ضمان 3 سنوات', 'خدمة الصيانة', 'قطع الغيار الأصلية']
     },
     {
       icon: Users,
-      title: 'Service Conciergerie',
-      description: 'Accompagnement personnalisé à chaque étape de votre expérience d\'achat.',
-      features: ['Conseiller dédié', 'Accompagnement VIP', 'Service 24/7']
+      title: 'استشارة مجانية',
+      description: 'استشارة مجانية من خبراء التصميم الداخلي لمساعدتك في اختيار الأثاث المناسب',
+      features: ['استشارة مجانية', 'زيارة منزلية', 'تصميم ثلاثي الأبعاد']
     },
     {
       icon: Clock,
-      title: 'Maintenance & Service',
-      description: 'Entretien et maintenance de vos véhicules par des techniciens certifiés.',
-      features: ['Service officiel', 'Pièces d\'origine', 'Maintenance préventive']
+      title: 'تركيب وتوصيل',
+      description: 'خدمة تركيب وتوصيل مجانية مع ضمان التركيب الصحيح',
+      features: ['توصيل مجاني', 'تركيب احترافي', 'ضمان التركيب']
     },
     {
       icon: Star,
-      title: 'Personnalisation',
-      description: 'Options de personnalisation exclusives pour créer votre véhicule unique.',
-      features: ['Options sur mesure', 'Finitions spéciales', 'Personnalisation complète']
+      title: 'التصميم الداخلي',
+      description: 'خدمة التصميم الداخلي الشاملة لتجميل منزلك بأحدث التصاميم',
+      features: ['تصميم كامل', 'اختيار الألوان', 'تنسيق الإضاءة']
     },
     {
-      icon: Zap,
-      title: 'Financement Premium',
-      description: 'Solutions de financement adaptées aux véhicules de luxe et sport.',
-      features: ['Taux préférentiels', 'Options flexibles', 'Accompagnement financier']
+      icon: Truck,
+      title: 'خدمة سريعة',
+      description: 'توصيل سريع وآمن لجميع أنحاء المغرب مع تتبع الشحنة',
+      features: ['توصيل سريع', 'تتبع الشحنة', 'خدمة 24/7']
     }
   ]
 
@@ -56,11 +56,10 @@ const ServicesOverview = () => {
           className="text-center mb-16"
         >
           <h2 className="text-4xl md:text-5xl font-display font-bold text-luxury-black mb-4">
-            Nos Services Premium
+            خدماتنا المميزة
           </h2>
-          <p className="text-xl text-gray-600 max-w-3xl mx-auto">
-            Une gamme complète de services exclusifs pour répondre aux exigences 
-            les plus élevées de nos clients.
+          <p className="text-xl text-gray-600 max-w-3xl mx-auto" dir="rtl">
+            مجموعة شاملة من الخدمات المميزة لتلبية احتياجاتكم في مجال الأثاث والتصميم الداخلي
           </p>
         </motion.div>
 
@@ -80,17 +79,17 @@ const ServicesOverview = () => {
                   <service.icon className="w-8 h-8 text-luxury-black" />
                 </div>
                 
-                <h3 className="text-xl font-bold text-luxury-black mb-4">
+                <h3 className="text-xl font-bold text-luxury-black mb-4" dir="rtl">
                   {service.title}
                 </h3>
                 
-                <p className="text-gray-600 mb-6">
+                <p className="text-gray-600 mb-6" dir="rtl">
                   {service.description}
                 </p>
 
                 <ul className="space-y-2">
                   {service.features.map((feature, idx) => (
-                    <li key={idx} className="flex items-center space-x-2 text-sm text-gray-600">
+                    <li key={idx} className="flex items-center space-x-2 text-sm text-gray-600" dir="rtl">
                       <div className="w-1.5 h-1.5 bg-luxury-gold rounded-full"></div>
                       <span>{feature}</span>
                     </li>

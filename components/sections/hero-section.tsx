@@ -14,22 +14,22 @@ const HeroSection = () => {
 
   const slides = [
     {
-      title: 'Excellence Automobile',
-      subtitle: 'Découvrez notre collection exclusive de véhicules de luxe et sport',
-      description: 'Spécialisé dans la vente des véhicules neuf : luxe & sport multimarque',
-      accent: 'BMW Série 7'
+      title: 'Meublux',
+      subtitle: 'Design your Dream Space',
+      description: 'استمتع بأجواء من الأناقة والحداثة مع تشكيلة أثاثنا العصري المصممة لتناسب أذواقكم الرفيعة',
+      accent: 'أثاث عصري'
     },
     {
-      title: 'Performance & Luxe',
-      subtitle: 'Des véhicules d\'exception pour des clients d\'exception',
-      description: 'Une expérience premium dans l\'acquisition de véhicules haut de gamme',
-      accent: 'Porsche 911'
+      title: 'أناقة وحداثة',
+      subtitle: 'تصميمات مبتكرة لمساحات فريدة',
+      description: 'تجمع قطعنا بين البساطة والتفرد، حيث يتم اختيار المواد العالية الجودة والتصميمات المبتكرة',
+      accent: 'تصميم داخلي'
     },
     {
-      title: 'Innovation & Tradition',
-      subtitle: 'L\'alliance parfaite entre technologie moderne et savoir-faire traditionnel',
-      description: 'Votre partenaire de confiance pour des véhicules d\'exception',
-      accent: 'Audi RS3'
+      title: 'راحة وعملية',
+      subtitle: 'بيئة فريدة تنبض بالحياة والأناقة',
+      description: 'سواء كنت تبحث عن قطع مميزة لغرفة المعيشة أو أثاث يضفي رونقاً خاصاً على مكتبك',
+      accent: 'مطبخ عصري'
     }
   ]
 
@@ -78,7 +78,7 @@ const HeroSection = () => {
           playsInline
           className="absolute inset-0 w-full h-full object-cover"
         >
-          <source src="/background-video.mp4" type="video/mp4" />
+          <source src="/1427832238427342.mp4" type="video/mp4" />
         </video>
         
         {/* Video Overlay with Animated Gradient */}
@@ -186,6 +186,7 @@ const HeroSection = () => {
                   animate={{ opacity: 1, y: 0 }}
                   transition={{ duration: 0.8, delay: 0.7 }}
                   className="text-lg md:text-xl mb-8 text-gray-200 max-w-3xl mx-auto leading-relaxed"
+                  dir="rtl"
                 >
                   {slides[currentSlide].description}
                 </motion.p>
@@ -204,7 +205,7 @@ const HeroSection = () => {
                 size="xl" 
                 className="group relative overflow-hidden"
               >
-                <span className="relative z-10">Découvrir Nos Véhicules</span>
+                <span className="relative z-10">تصفح تشكيلتنا</span>
                 <ArrowRight className="ml-2 w-5 h-5 group-hover:translate-x-1 transition-transform relative z-10" />
                 <motion.div
                   className="absolute inset-0 bg-gradient-to-r from-luxury-goldDark to-luxury-gold"
@@ -225,7 +226,7 @@ const HeroSection = () => {
                 ) : (
                   <Play className="mr-2 w-5 h-5" />
                 )}
-                {isVideoPlaying ? 'Pause' : 'Play'}
+                {isVideoPlaying ? 'إيقاف' : 'تشغيل'}
               </Button>
             </motion.div>
 
@@ -242,7 +243,7 @@ const HeroSection = () => {
                 transition={{ duration: 0.2 }}
               >
                 <div className="w-2 h-2 bg-luxury-gold rounded-full animate-pulse"></div>
-                <span>+15 ans d'expérience</span>
+                <span>+10 سنوات خبرة</span>
               </motion.div>
               <motion.div 
                 className="flex items-center space-x-2"
@@ -250,7 +251,7 @@ const HeroSection = () => {
                 transition={{ duration: 0.2 }}
               >
                 <div className="w-2 h-2 bg-luxury-gold rounded-full animate-pulse"></div>
-                <span>+500 véhicules vendus</span>
+                <span>+500 مشروع منجز</span>
               </motion.div>
               <motion.div 
                 className="flex items-center space-x-2"
@@ -258,7 +259,7 @@ const HeroSection = () => {
                 transition={{ duration: 0.2 }}
               >
                 <div className="w-2 h-2 bg-luxury-gold rounded-full animate-pulse"></div>
-                <span>Certification officielle</span>
+                <span>تصميم مخصص</span>
               </motion.div>
             </motion.div>
           </div>
@@ -348,7 +349,7 @@ const HeroSection = () => {
           animate={{ opacity: [0.2, 0.4, 0.2] }}
           transition={{ duration: 3, repeat: Infinity }}
         >
-          IA
+          M
         </motion.div>
       </div>
 
@@ -358,7 +359,7 @@ const HeroSection = () => {
           animate={{ opacity: [0.2, 0.4, 0.2] }}
           transition={{ duration: 3, repeat: Infinity, delay: 1 }}
         >
-          LUXURY
+          FURNITURE
         </motion.div>
       </div>
     </section>

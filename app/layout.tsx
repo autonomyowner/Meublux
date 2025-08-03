@@ -15,41 +15,41 @@ const playfair = Playfair_Display({
 })
 
 export const metadata: Metadata = {
-  title: 'Ikhlas Automobiles - Luxury & Sports Vehicles',
-  description: 'Spécialisé dans la vente des véhicules neuf : luxe & sport multimarque. Découvrez notre collection exclusive de véhicules de luxe et sport.',
-  keywords: 'luxury cars, sports cars, premium vehicles, multimarque, Ikhlas Automobiles, véhicules de luxe',
-  authors: [{ name: 'Ikhlas Automobiles' }],
-  creator: 'Ikhlas Automobiles',
-  publisher: 'Ikhlas Automobiles',
+  title: 'Meublux - Design your Dream Space',
+  description: 'استمتع بأجواء من الأناقة والحداثة مع تشكيلة أثاثنا العصري المصممة لتناسب أذواقكم الرفيعة',
+  keywords: 'furniture, interior design, kitchen, living room, bedroom, office, Algeria, أثاث, تصميم داخلي, مطبخ, غرفة معيشة',
+  authors: [{ name: 'Meublux' }],
+  creator: 'Meublux',
+  publisher: 'Meublux',
   formatDetection: {
     email: false,
     address: false,
     telephone: false,
   },
-  metadataBase: new URL('https://ikhlas-automobiles.com'),
+  metadataBase: new URL('https://meublux.com'),
   alternates: {
     canonical: '/',
   },
   openGraph: {
-    title: 'Ikhlas Automobiles - Luxury & Sports Vehicles',
-    description: 'Spécialisé dans la vente des véhicules neuf : luxe & sport multimarque',
-    url: 'https://ikhlas-automobiles.com',
-    siteName: 'Ikhlas Automobiles',
+    title: 'Meublux - Design your Dream Space',
+    description: 'استمتع بأجواء من الأناقة والحداثة مع تشكيلة أثاثنا العصري المصممة لتناسب أذواقكم الرفيعة',
+    url: 'https://meublux.com',
+    siteName: 'Meublux',
     images: [
       {
         url: '/og-image.jpg',
         width: 1200,
         height: 630,
-        alt: 'Ikhlas Automobiles - Luxury Cars',
+        alt: 'Meublux - Furniture & Interior Design',
       },
     ],
-    locale: 'fr_FR',
+    locale: 'ar_DZ',
     type: 'website',
   },
   twitter: {
     card: 'summary_large_image',
-    title: 'Ikhlas Automobiles - Luxury & Sports Vehicles',
-    description: 'Spécialisé dans la vente des véhicules neuf : luxe & sport multimarque',
+    title: 'Meublux - Design your Dream Space',
+    description: 'استمتع بأجواء من الأناقة والحداثة مع تشكيلة أثاثنا العصري المصممة لتناسب أذواقكم الرفيعة',
     images: ['/og-image.jpg'],
   },
   robots: {
@@ -74,7 +74,7 @@ export default function RootLayout({
   children: React.ReactNode
 }) {
   return (
-    <html lang="fr" className={`${inter.variable} ${playfair.variable}`}>
+    <html lang="ar" dir="rtl" className={`${inter.variable} ${playfair.variable}`}>
       <head>
         <link rel="icon" href="/favicon.ico" />
         <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png" />

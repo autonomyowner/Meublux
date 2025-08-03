@@ -19,11 +19,10 @@ const ContactCTA = () => {
             className="mb-12"
           >
             <h2 className="text-4xl md:text-5xl font-display font-bold text-white mb-6">
-              Prêt à Découvrir l'Excellence ?
+              جاهز لتصميم مساحتك المثالية؟
             </h2>
-            <p className="text-xl text-gray-300 max-w-2xl mx-auto">
-              Contactez-nous dès aujourd'hui pour une expérience d'achat de véhicule de luxe 
-              inégalée et personnalisée.
+            <p className="text-xl text-gray-300 max-w-2xl mx-auto" dir="rtl">
+              اتصل بنا اليوم للحصول على تجربة تصميم أثاث فاخر ومخصص لا مثيل لها
             </p>
           </motion.div>
 
@@ -39,13 +38,13 @@ const ContactCTA = () => {
               <div className="w-16 h-16 bg-luxury-gold rounded-2xl flex items-center justify-center mx-auto mb-6">
                 <Phone className="w-8 h-8 text-luxury-black" />
               </div>
-              <h3 className="text-xl font-bold text-white mb-4">Téléphone</h3>
-              <p className="text-gray-300 mb-4">Appelez-nous directement</p>
+              <h3 className="text-xl font-bold text-white mb-4">الهاتف</h3>
+              <p className="text-gray-300 mb-4" dir="rtl">اتصل بنا مباشرة</p>
               <a 
-                href="tel:+33142869500" 
+                href="tel:0561009194" 
                 className="text-luxury-gold font-semibold text-lg hover:text-luxury-goldLight transition-colors"
               >
-                +33 1 42 86 95 00
+                0561 00 91 94
               </a>
             </div>
 
@@ -53,13 +52,13 @@ const ContactCTA = () => {
               <div className="w-16 h-16 bg-luxury-gold rounded-2xl flex items-center justify-center mx-auto mb-6">
                 <Mail className="w-8 h-8 text-luxury-black" />
               </div>
-              <h3 className="text-xl font-bold text-white mb-4">Email</h3>
-              <p className="text-gray-300 mb-4">Envoyez-nous un message</p>
+              <h3 className="text-xl font-bold text-white mb-4">البريد الإلكتروني</h3>
+              <p className="text-gray-300 mb-4" dir="rtl">أرسل لنا رسالة</p>
               <a 
-                href="mailto:contact@ikhlas-automobiles.fr" 
+                href="mailto:walidmessaoudi178@gmail.com" 
                 className="text-luxury-gold font-semibold text-lg hover:text-luxury-goldLight transition-colors"
               >
-                contact@ikhlas-automobiles.fr
+                walidmessaoudi178@gmail.com
               </a>
             </div>
 
@@ -67,10 +66,10 @@ const ContactCTA = () => {
               <div className="w-16 h-16 bg-luxury-gold rounded-2xl flex items-center justify-center mx-auto mb-6">
                 <MapPin className="w-8 h-8 text-luxury-black" />
               </div>
-              <h3 className="text-xl font-bold text-white mb-4">Adresse</h3>
-              <p className="text-gray-300 mb-4">Visitez notre showroom</p>
+              <h3 className="text-xl font-bold text-white mb-4">العنوان</h3>
+              <p className="text-gray-300 mb-4" dir="rtl">زر معرضنا</p>
               <p className="text-luxury-gold font-semibold text-lg">
-                Paris, France
+                الجزائر
               </p>
             </div>
           </motion.div>
@@ -88,7 +87,7 @@ const ContactCTA = () => {
               size="xl" 
               className="group"
             >
-              Prendre Rendez-vous
+              احجز استشارة مجانية
               <ArrowRight className="ml-2 w-5 h-5 group-hover:translate-x-1 transition-transform" />
             </Button>
             <Button 
@@ -96,7 +95,7 @@ const ContactCTA = () => {
               size="xl"
               className="group"
             >
-              Demander un Devis
+              اطلب عرض سعر
               <ArrowRight className="ml-2 w-5 h-5 group-hover:translate-x-1 transition-transform" />
             </Button>
           </motion.div>
@@ -110,8 +109,8 @@ const ContactCTA = () => {
             className="inline-flex items-center space-x-4 bg-luxury-gold/20 backdrop-blur-sm rounded-full px-8 py-4 border border-luxury-gold/30"
           >
             <Clock className="w-5 h-5 text-luxury-gold" />
-            <span className="text-white font-medium">
-              Ouvert du Lundi au Vendredi : 9h00 - 19h00
+            <span className="text-white font-medium" dir="rtl">
+              مفتوح من الاثنين إلى الجمعة : 9:00 - 19:00
             </span>
           </motion.div>
         </div>

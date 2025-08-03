@@ -1,3 +1,38 @@
+export interface Furniture {
+  id: string
+  name: string
+  category: 'Living Room' | 'Kitchen' | 'Bedroom' | 'Office' | 'Dining Room' | 'Bathroom'
+  style: 'Modern' | 'Classic' | 'Contemporary' | 'Minimalist' | 'Luxury' | 'Scandinavian'
+  material: string
+  color: string
+  dimensions: {
+    length: number
+    width: number
+    height: number
+  }
+  price: number
+  images: string[]
+  description: string
+  features: string[]
+  status: 'Available' | 'Custom Order' | 'Out of Stock'
+  location: string
+  createdAt: Date
+  updatedAt: Date
+}
+
+export interface InteriorDesign {
+  id: string
+  title: string
+  category: 'Residential' | 'Commercial' | 'Kitchen' | 'Living Room' | 'Bedroom' | 'Office'
+  style: string
+  description: string
+  images: string[]
+  features: string[]
+  price?: number
+  duration: string
+  status: 'Available' | 'In Progress' | 'Completed'
+}
+
 export interface Vehicle {
   id: string
   brand: string

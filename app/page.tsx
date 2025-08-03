@@ -1,6 +1,6 @@
 import Header from '@/components/layout/header'
 import HeroSection from '@/components/sections/hero-section'
-import FeaturedVehicles from '@/components/sections/featured-vehicles'
+import FeaturedFurniture from '@/components/sections/featured-vehicles'
 import BrandShowcase from '@/components/sections/brand-showcase'
 import ServicesOverview from '@/components/sections/services-overview'
 import WhyChooseUs from '@/components/sections/why-choose-us'
@@ -16,8 +16,8 @@ export default function HomePage() {
       {/* Hero Section */}
       <HeroSection />
       
-      {/* Featured Vehicles */}
-      <FeaturedVehicles />
+      {/* Featured Furniture */}
+      <FeaturedFurniture />
       
       {/* Brand Showcase */}
       <BrandShowcase />

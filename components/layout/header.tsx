@@ -20,12 +20,12 @@ const Header = () => {
   }, [])
 
   const navigation = [
-    { name: 'Accueil', href: '/' },
-    { name: 'Véhicules', href: '/vehicles' },
-    { name: 'Marques', href: '/brands' },
-    { name: 'Services', href: '/services' },
-    { name: 'À Propos', href: '/about' },
-    { name: 'Contact', href: '/contact' },
+    { name: 'الرئيسية', href: '/' },
+    { name: 'الأثاث', href: '/furniture' },
+    { name: 'المطبخ', href: '/kitchen' },
+    { name: 'التصميم الداخلي', href: '/interior-design' },
+    { name: 'من نحن', href: '/about' },
+    { name: 'اتصل بنا', href: '/contact' },
   ]
 
   const handleMobileMenuToggle = () => {
@@ -46,16 +46,16 @@ const Header = () => {
             <div className="flex items-center space-x-6">
               <div className="flex items-center space-x-2">
                 <Phone className="w-4 h-4" />
-                <span>+33 1 42 86 95 00</span>
+                <span>0561 00 91 94</span>
               </div>
               <div className="flex items-center space-x-2">
                 <Mail className="w-4 h-4" />
-                <span>contact@ikhlas-automobiles.fr</span>
+                <span>walidmessaoudi178@gmail.com</span>
               </div>
             </div>
             <div className="flex items-center space-x-2">
               <MapPin className="w-4 h-4" />
-              <span>Paris, France</span>
+              <span>الجزائر</span>
             </div>
           </div>
         </div>
@@ -71,11 +71,11 @@ const Header = () => {
             {/* Logo */}
             <Link href="/" className="flex items-center space-x-2">
               <div className="w-12 h-12 bg-luxury-gold rounded-full flex items-center justify-center">
-                <span className="text-luxury-black font-bold text-xl">IA</span>
+                <span className="text-luxury-black font-bold text-xl">M</span>
               </div>
               <div className="hidden sm:block">
-                <h1 className="text-xl font-bold text-luxury-black">Ikhlas Automobiles</h1>
-                <p className="text-xs text-gray-600">Luxury & Sports Vehicles</p>
+                <h1 className="text-xl font-bold text-luxury-black">Meublux</h1>
+                <p className="text-xs text-gray-600">Design your Dream Space</p>
               </div>
             </Link>
 
@@ -100,10 +100,10 @@ const Header = () => {
             {/* CTA Buttons */}
             <div className="hidden lg:flex items-center space-x-4">
               <Button variant="luxuryOutline" size="sm">
-                Prendre RDV
+                احجز استشارة
               </Button>
               <Button variant="luxury" size="sm">
-                Nos Véhicules
+                تصفح الأثاث
               </Button>
             </div>
 
@@ -139,10 +139,10 @@ const Header = () => {
                 ))}
                 <div className="flex flex-col space-y-2 pt-4 border-t border-gray-200">
                   <Button variant="luxuryOutline" size="sm" className="w-full">
-                    Prendre RDV
+                    احجز استشارة
                   </Button>
                   <Button variant="luxury" size="sm" className="w-full">
-                    Nos Véhicules
+                    تصفح الأثاث
                   </Button>
                 </div>
               </div>

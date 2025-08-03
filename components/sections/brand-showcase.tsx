@@ -4,15 +4,15 @@ import React from 'react'
 import { motion } from 'framer-motion'
 
 const BrandShowcase = () => {
-  const brands = [
-    { name: 'Mercedes-Benz', logo: 'MB' },
-    { name: 'BMW', logo: 'BMW' },
-    { name: 'Audi', logo: 'AUDI' },
-    { name: 'Porsche', logo: 'PORSCHE' },
-    { name: 'Bentley', logo: 'BENTLEY' },
-    { name: 'Range Rover', logo: 'RANGE ROVER' },
-    { name: 'Ferrari', logo: 'FERRARI' },
-    { name: 'Lamborghini', logo: 'LAMBORGHINI' },
+  const categories = [
+    { name: 'غرف المعيشة', logo: 'LR', description: 'أثاث أنيق ومريح' },
+    { name: 'المطابخ', logo: 'KT', description: 'تصاميم عصرية' },
+    { name: 'غرف النوم', logo: 'BR', description: 'راحة واسترخاء' },
+    { name: 'المكاتب', logo: 'OF', description: 'عملية وأناقة' },
+    { name: 'غرف الطعام', logo: 'DR', description: 'تجمعات عائلية' },
+    { name: 'الحمامات', logo: 'BT', description: 'فخامة ورفاهية' },
+    { name: 'التصميم الداخلي', logo: 'ID', description: 'إبداع وتفرد' },
+    { name: 'الإضاءة', logo: 'LT', description: 'إضاءة احترافية' },
   ]
 
   return (
@@ -27,19 +27,19 @@ const BrandShowcase = () => {
           className="text-center mb-16"
         >
           <h2 className="text-4xl md:text-5xl font-display font-bold text-white mb-4">
-            Nos Marques Partenaires
+            فئات الأثاث والتصميم
           </h2>
-          <p className="text-xl text-gray-300 max-w-3xl mx-auto">
-            Nous représentons les plus prestigieuses marques automobiles du monde, 
-            garantissant une qualité et une excellence reconnues internationalement.
+          <p className="text-xl text-gray-300 max-w-3xl mx-auto" dir="rtl">
+            نقدم تشكيلة شاملة من الأثاث والتصميم الداخلي لجميع أجزاء منزلك، 
+            مع ضمان الجودة والأناقة في كل تفصيل
           </p>
         </motion.div>
 
-        {/* Brands Grid */}
+        {/* Categories Grid */}
         <div className="grid grid-cols-2 md:grid-cols-4 gap-8">
-          {brands.map((brand, index) => (
+          {categories.map((category, index) => (
             <motion.div
-              key={brand.name}
+              key={category.name}
               initial={{ opacity: 0, scale: 0.8 }}
               whileInView={{ opacity: 1, scale: 1 }}
               transition={{ duration: 0.6, delay: index * 0.1 }}
@@ -49,12 +49,15 @@ const BrandShowcase = () => {
               <div className="bg-white/10 backdrop-blur-sm rounded-2xl p-8 text-center hover-lift border border-white/20">
                 <div className="w-16 h-16 bg-luxury-gold rounded-full flex items-center justify-center mx-auto mb-4 group-hover:scale-110 transition-transform duration-300">
                   <span className="text-luxury-black font-bold text-sm">
-                    {brand.logo}
+                    {category.logo}
                   </span>
                 </div>
-                <h3 className="text-white font-semibold text-lg">
-                  {brand.name}
+                <h3 className="text-white font-semibold text-lg mb-2" dir="rtl">
+                  {category.name}
                 </h3>
+                <p className="text-gray-300 text-sm" dir="rtl">
+                  {category.description}
+                </p>
               </div>
             </motion.div>
           ))}
@@ -70,8 +73,8 @@ const BrandShowcase = () => {
         >
           <div className="inline-flex items-center space-x-4 bg-luxury-gold/20 backdrop-blur-sm rounded-full px-8 py-4 border border-luxury-gold/30">
             <div className="w-2 h-2 bg-luxury-gold rounded-full"></div>
-            <span className="text-white font-medium">
-              Partenaires officiels certifiés
+            <span className="text-white font-medium" dir="rtl">
+              جودة معتمدة وضمان شامل
             </span>
             <div className="w-2 h-2 bg-luxury-gold rounded-full"></div>
           </div>

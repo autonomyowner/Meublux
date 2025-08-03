@@ -2,44 +2,44 @@
 
 import React from 'react'
 import { motion } from 'framer-motion'
-import { Award, Clock, Shield, Users, Star, Zap } from 'lucide-react'
+import { Award, Clock, Shield, Users, Star, Zap, Home, Palette } from 'lucide-react'
 
 const WhyChooseUs = () => {
   const reasons = [
     {
       icon: Award,
-      title: 'Excellence Reconnue',
-      description: 'Plus de 15 ans d\'expérience dans le secteur des véhicules de luxe avec une réputation d\'excellence.',
-      stat: '15+ ans'
+      title: 'خبرة موثوقة',
+      description: 'أكثر من 10 سنوات من الخبرة في مجال الأثاث والتصميم الداخلي مع سمعة مميزة',
+      stat: '10+ سنوات'
     },
     {
       icon: Users,
-      title: 'Service Personnalisé',
-      description: 'Chaque client bénéficie d\'un accompagnement sur mesure avec un conseiller dédié.',
+      title: 'خدمة مخصصة',
+      description: 'كل عميل يحصل على استشارة مخصصة مع مصمم محترف مخصص له',
       stat: '100%'
     },
     {
       icon: Shield,
-      title: 'Garantie Premium',
-      description: 'Protection complète de votre investissement avec nos garanties étendues et assurances.',
+      title: 'ضمان الجودة',
+      description: 'ضمان شامل على جميع منتجاتنا مع خدمة ما بعد البيع المميزة',
       stat: '100%'
     },
     {
       icon: Star,
-      title: 'Véhicules d\'Exception',
-      description: 'Sélection rigoureuse de véhicules rares et exclusifs répondant aux plus hauts standards.',
+      title: 'أثاث فاخر',
+      description: 'اختيار دقيق لأثاث عالي الجودة يلبي أعلى المعايير العالمية',
       stat: '500+'
     },
     {
       icon: Clock,
-      title: 'Disponibilité 24/7',
-      description: 'Service client disponible en permanence pour répondre à vos besoins urgents.',
+      title: 'خدمة 24/7',
+      description: 'خدمة عملاء متاحة على مدار الساعة للرد على احتياجاتكم العاجلة',
       stat: '24/7'
     },
     {
-      icon: Zap,
-      title: 'Innovation Technologique',
-      description: 'Utilisation des dernières technologies pour une expérience d\'achat moderne et efficace.',
+      icon: Palette,
+      title: 'تصميم مبتكر',
+      description: 'استخدام أحدث تقنيات التصميم لتوفير تجربة شراء حديثة وفعالة',
       stat: '100%'
     }
   ]
@@ -56,11 +56,10 @@ const WhyChooseUs = () => {
           className="text-center mb-16"
         >
           <h2 className="text-4xl md:text-5xl font-display font-bold text-white mb-4">
-            Pourquoi Choisir Ikhlas Automobiles
+            لماذا تختار Meublux
           </h2>
-          <p className="text-xl text-gray-300 max-w-3xl mx-auto">
-            Notre engagement envers l\'excellence et notre passion pour les véhicules d\'exception 
-            font de nous votre partenaire de confiance.
+          <p className="text-xl text-gray-300 max-w-3xl mx-auto" dir="rtl">
+            التزامنا بالتميز وشغفنا بالأثاث الفاخر يجعلنا شريككم الموثوق في تصميم مساحاتكم
           </p>
         </motion.div>
 
@@ -82,15 +81,15 @@ const WhyChooseUs = () => {
                   </div>
                   <div className="text-right">
                     <div className="text-3xl font-bold text-luxury-gold">{reason.stat}</div>
-                    <div className="text-sm text-gray-300">Garantie</div>
+                    <div className="text-sm text-gray-300">ضمان</div>
                   </div>
                 </div>
                 
-                <h3 className="text-xl font-bold text-white mb-4">
+                <h3 className="text-xl font-bold text-white mb-4" dir="rtl">
                   {reason.title}
                 </h3>
                 
-                <p className="text-gray-300">
+                <p className="text-gray-300" dir="rtl">
                   {reason.description}
                 </p>
               </div>
@@ -109,17 +108,17 @@ const WhyChooseUs = () => {
           <div className="inline-flex items-center space-x-6 bg-luxury-gold/20 backdrop-blur-sm rounded-full px-8 py-4 border border-luxury-gold/30">
             <div className="flex items-center space-x-2">
               <Star className="w-5 h-5 text-luxury-gold" />
-              <span className="text-white font-medium">Excellence</span>
+              <span className="text-white font-medium">التميز</span>
             </div>
             <div className="w-1 h-1 bg-luxury-gold rounded-full"></div>
             <div className="flex items-center space-x-2">
               <Shield className="w-5 h-5 text-luxury-gold" />
-              <span className="text-white font-medium">Confiance</span>
+              <span className="text-white font-medium">الثقة</span>
             </div>
             <div className="w-1 h-1 bg-luxury-gold rounded-full"></div>
             <div className="flex items-center space-x-2">
               <Award className="w-5 h-5 text-luxury-gold" />
-              <span className="text-white font-medium">Qualité</span>
+              <span className="text-white font-medium">الجودة</span>
             </div>
           </div>
         </motion.div>

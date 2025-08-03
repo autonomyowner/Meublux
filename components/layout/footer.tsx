@@ -9,28 +9,28 @@ const Footer = () => {
 
   const footerLinks = {
     company: [
-      { name: 'À Propos', href: '/about' },
-      { name: 'Notre Histoire', href: '/about#history' },
-      { name: 'Équipe', href: '/about#team' },
-      { name: 'Carrières', href: '/careers' },
+      { name: 'من نحن', href: '/about' },
+      { name: 'قصتنا', href: '/about#history' },
+      { name: 'فريق العمل', href: '/about#team' },
+      { name: 'وظائف', href: '/careers' },
     ],
     services: [
-      { name: 'Véhicules', href: '/vehicles' },
-      { name: 'Services', href: '/services' },
-      { name: 'Financement', href: '/financing' },
-      { name: 'Maintenance', href: '/maintenance' },
+      { name: 'الأثاث', href: '/furniture' },
+      { name: 'الخدمات', href: '/services' },
+      { name: 'التصميم الداخلي', href: '/interior-design' },
+      { name: 'المطبخ', href: '/kitchen' },
     ],
     support: [
-      { name: 'Contact', href: '/contact' },
-      { name: 'FAQ', href: '/faq' },
-      { name: 'Support', href: '/support' },
-      { name: 'Garantie', href: '/warranty' },
+      { name: 'اتصل بنا', href: '/contact' },
+      { name: 'الأسئلة الشائعة', href: '/faq' },
+      { name: 'الدعم', href: '/support' },
+      { name: 'الضمان', href: '/warranty' },
     ],
     legal: [
-      { name: 'Mentions Légales', href: '/legal' },
-      { name: 'Politique de Confidentialité', href: '/privacy' },
-      { name: 'CGV', href: '/terms' },
-      { name: 'Cookies', href: '/cookies' },
+      { name: 'الشروط القانونية', href: '/legal' },
+      { name: 'سياسة الخصوصية', href: '/privacy' },
+      { name: 'الشروط والأحكام', href: '/terms' },
+      { name: 'ملفات تعريف الارتباط', href: '/cookies' },
     ]
   }
 
@@ -51,44 +51,44 @@ const Footer = () => {
           <div className="lg:col-span-2">
             <div className="flex items-center space-x-2 mb-6">
               <div className="w-12 h-12 bg-luxury-gold rounded-full flex items-center justify-center">
-                <span className="text-luxury-black font-bold text-xl">IA</span>
+                <span className="text-luxury-black font-bold text-xl">M</span>
               </div>
               <div>
-                <h3 className="text-xl font-bold">Ikhlas Automobiles</h3>
-                <p className="text-sm text-gray-400">Luxury & Sports Vehicles</p>
+                <h3 className="text-xl font-bold">Meublux</h3>
+                <p className="text-sm text-gray-400">Design your Dream Space</p>
               </div>
             </div>
-            <p className="text-gray-300 mb-6 max-w-md">
-              Spécialisé dans la vente des véhicules neuf : luxe & sport multimarque. 
-              Votre partenaire de confiance pour des véhicules d'exception.
+            <p className="text-gray-300 mb-6 max-w-md" dir="rtl">
+              استمتع بأجواء من الأناقة والحداثة مع تشكيلة أثاثنا العصري المصممة لتناسب أذواقكم الرفيعة
             </p>
             
             {/* Contact Info */}
             <div className="space-y-3">
               <div className="flex items-center space-x-3">
                 <Phone className="w-4 h-4 text-luxury-gold" />
-                <span className="text-gray-300">+33 1 42 86 95 00</span>
+                <span className="text-gray-300">0561 00 91 94</span>
               </div>
               <div className="flex items-center space-x-3">
                 <Mail className="w-4 h-4 text-luxury-gold" />
-                <span className="text-gray-300">contact@ikhlas-automobiles.fr</span>
+                <span className="text-gray-300">walidmessaoudi178@gmail.com</span>
               </div>
               <div className="flex items-center space-x-3">
                 <MapPin className="w-4 h-4 text-luxury-gold" />
-                <span className="text-gray-300">Paris, France</span>
+                <span className="text-gray-300">الجزائر</span>
               </div>
             </div>
           </div>
 
           {/* Company Links */}
           <div>
-            <h4 className="font-semibold mb-4">Entreprise</h4>
+            <h4 className="font-semibold mb-4">الشركة</h4>
             <ul className="space-y-2">
               {footerLinks.company.map((link) => (
                 <li key={link.name}>
                   <Link 
                     href={link.href}
                     className="text-gray-300 hover:text-luxury-gold transition-colors"
+                    dir="rtl"
                   >
                     {link.name}
                   </Link>
@@ -99,13 +99,14 @@ const Footer = () => {
 
           {/* Services Links */}
           <div>
-            <h4 className="font-semibold mb-4">Services</h4>
+            <h4 className="font-semibold mb-4">الخدمات</h4>
             <ul className="space-y-2">
               {footerLinks.services.map((link) => (
                 <li key={link.name}>
                   <Link 
                     href={link.href}
                     className="text-gray-300 hover:text-luxury-gold transition-colors"
+                    dir="rtl"
                   >
                     {link.name}
                   </Link>
@@ -116,13 +117,14 @@ const Footer = () => {
 
           {/* Support Links */}
           <div>
-            <h4 className="font-semibold mb-4">Support</h4>
+            <h4 className="font-semibold mb-4">الدعم</h4>
             <ul className="space-y-2">
               {footerLinks.support.map((link) => (
                 <li key={link.name}>
                   <Link 
                     href={link.href}
                     className="text-gray-300 hover:text-luxury-gold transition-colors"
+                    dir="rtl"
                   >
                     {link.name}
                   </Link>
@@ -150,7 +152,7 @@ const Footer = () => {
             
             <div className="text-center md:text-right">
               <p className="text-gray-400 text-sm">
-                © {currentYear} Ikhlas Automobiles. Tous droits réservés.
+                © {currentYear} Meublux. جميع الحقوق محفوظة.
               </p>
             </div>
           </div>
@@ -167,13 +169,14 @@ const Footer = () => {
                   key={link.name}
                   href={link.href}
                   className="hover:text-luxury-gold transition-colors"
+                  dir="rtl"
                 >
                   {link.name}
                 </Link>
               ))}
             </div>
             <div>
-              <p>Certifié ISO 9001 - Partenaire Officiel</p>
+              <p dir="rtl">معتمد - شريك رسمي</p>
             </div>
           </div>
         </div>
